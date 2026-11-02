@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087f78">
+  <meta name="description" content="FreshFold laundry and dry cleaning, picked up, washed, and delivered the same day.">
+  <title>FreshFold — Laundry, picked up and delivered</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="FreshFold home"><span class="brand-mark" aria-hidden="true">F</span><span>fresh<span class="brand-accent">fold</span></span></a>
+    <form class="header-search" id="header-search-form" role="search">
+      <label class="sr-only" for="header-search">Search garments and services</label>
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input id="header-search" type="search" placeholder="Search laundry, dry cleaning..." autocomplete="off">
+      <button type="submit" class="search-submit">Search</button>
+    </form>
+    <nav class="header-actions" aria-label="Main actions">
+      <button class="header-button" id="login-button" type="button"><span aria-hidden="true">♙</span><span id="login-label">Login</span></button>
+      <button class="header-button orders-button" id="orders-button" type="button"><span aria-hidden="true">↻</span><span>Orders</span></button>
+      <button class="header-button cart-button" id="cart-button" type="button" aria-label="Open cart, 0 items"><span aria-hidden="true">▱</span><span>Cart</span><span class="cart-count" id="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR CLOTHES, IN GOOD HANDS</span>
+        <h1 id="hero-title">Laundry day,<br><span>lightened.</span></h1>
+        <p>Expert care for every thread. We pick up, wash, and deliver your favourites fresh on the very same day.</p>
+        <div class="hero-benefits" aria-label="Service benefits">
+          <span><b>✓</b> Free doorstep pickup</span>
+          <span><b>✓</b> Same-day delivery</span>
+          <span><b>✓</b> Per-piece pricing</span>
+          <span><b>✓</b> Live order tracking</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Freshly folded laundry illustration" role="img">
+        <div class="art-sun"></div><div class="art-sparkle sparkle-one">✦</div><div class="art-sparkle sparkle-two">✧</div>
+        <div class="art-basket"><div class="basket-clothes cloth-one"></div><div class="basket-clothes cloth-two"></div><div class="basket-clothes cloth-three"></div><div class="basket-body"></div><div class="basket-handle"></div></div>
+        <div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div>
+        <div class="art-tag"><span>✦</span> FRESH & FOLDED</div>
+        <div class="art-caption"><span class="caption-icon">✓</span><span><b>Care you can feel</b><small>Every single wash</small></span></div>
+      </div>
+    </section>
+
+    <section class="shop-section page-width" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading shop-heading">
+        <div><span class="eyebrow">THE FRESHFOLD EDIT</span><h2 id="shop-title">Shop laundry care</h2><p>Pick your pieces. We’ll take care of the rest.</p></div>
+      </div>
+      <div class="shop-tools">
+        <div class="category-tabs" id="category-tabs" role="tablist" aria-label="Product categories">
+          <button class="category-tab active" type="button" role="tab" aria-selected="true" data-category="All">All</button>
+          <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Men">Men</button>
+          <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Women">Women</button>
+          <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Kids">Kids</button>
+          <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Household">Household</button>
+          <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Premium care">Premium care</button>
+        </div>
+        <form class="shop-search" id="shop-search-form" role="search">
+          <label class="sr-only" for="shop-search-input">Search products</label><span aria-hidden="true">⌕</span>
+          <input id="shop-search-input" type="search" placeholder="Find a garment...">
+        </form>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="empty-state hidden" id="empty-state">No items found. Try another search.</p>
+    </section>
+
+    <section class="how-section" aria-labelledby="how-title">
+      <div class="page-width">
+        <div class="section-heading centered-heading"><span class="eyebrow">NO HASSLE, JUST FRESH</span><h2 id="how-title">Fresh clothes in four easy steps</h2><p>More time for the things you love.</p></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-icon">▦</span><span class="step-number">01</span><h3>Schedule</h3><p>Choose your services and a pickup time that works for you.</p></article>
+          <article class="step-card"><span class="step-icon">♧</span><span class="step-number">02</span><h3>We collect</h3><p>Our friendly partner picks up right from your doorstep.</p></article>
+          <article class="step-card"><span class="step-icon">✳</span><span class="step-number">03</span><h3>We clean</h3><p>Your pieces get the right care from our cleaning experts.</p></article>
+          <article class="step-card"><span class="step-icon">⌁</span><span class="step-number">04</span><h3>We deliver</h3><p>Fresh, folded, and back at your door later that same day.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width footer-content">
+      <a class="brand footer-brand" href="#" aria-label="FreshFold home"><span class="brand-mark" aria-hidden="true">F</span><span>fresh<span class="brand-accent">fold</span></span></a>
+      <p>A little more fresh in your everyday.</p>
+      <span class="footer-note">Carefully cleaned. Happily delivered. <span aria-hidden="true">✦</span></span>
+      <small>© 2026 FreshFold. Made for your everyday.</small>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Your shopping cart" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">YOUR FRESHFOLD BAG</span><h2>Your cart <span id="drawer-item-count">(0)</span></h2></div><button class="icon-button" id="close-cart" type="button" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span>▱</span><h3>Your bag is taking a breather</h3><p>Add a few favourites and we’ll take it from here.</p><button class="text-button" id="continue-shopping" type="button">Explore services <span aria-hidden="true">→</span></button></div>
+    <div class="cart-bottom" id="cart-bottom">
+      <form class="coupon-form" id="coupon-form"><label for="coupon-input">Got a little something for your order?</label><div><input id="coupon-input" type="text" placeholder="Enter coupon code" autocomplete="off"><button type="submit">Apply</button></div><p class="coupon-message" id="coupon-message" aria-live="polite"></p></form>
+      <div class="bill-summary"><div><span>Subtotal</span><span id="subtotal-value">₹0</span></div><div><span>Discount</span><span class="discount-value" id="discount-value">−₹0</span></div><div><span>Delivery</span><span id="delivery-value">₹0</span></div><div class="bill-total"><strong>Total</strong><strong id="total-value">₹0</strong></div></div>
+      <p class="minimum-note" id="minimum-note">Minimum order value is ₹149.</p>
+      <button class="primary-button checkout-button" id="checkout-button" type="button">Continue to checkout <span aria-hidden="true">→</span></button>
+      <p class="secure-note"><span aria-hidden="true">♡</span> Your order, your way. Payment is simulated for this demo.</p>
+    </div>
+  </aside>
+
+  <section class="modal-shell" id="modal-shell" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <button class="icon-button modal-close" id="close-modal" type="button" aria-label="Close dialog">×</button>
+    <div id="modal-content"></div>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
